@@ -8,12 +8,19 @@
 
 ///////////////////////////////////////////////////////////////////////////////
 
-function hizBelirleme(){
-    let hiz = +prompt('hızınız giriniz: ');
-    let sonuc = hiz >=140 ? 'hız sınırını aştınız' : (hiz >=90 ? 'normal hızda gidiyorsunuz' : 'yavaş gidiyorsunuz, hızlanın');
+// function hizBelirleme(){
+//     let hiz = +prompt('hızınız giriniz: ');
+//     let sonuc = hiz >=140 ? 'hız sınırını aştınız' : (hiz >=90 ? 'normal hızda gidiyorsunuz' : 'yavaş gidiyorsunuz, hızlanın');
+//     console.log(sonuc);
+// }
+
+///////////////////////////////////////////////////////////////////////////////
+
+function tekCift(){
+    let sayi = +prompt('Tek veya çift sayı belirleme: ');
+    let sonuc = (sayi%2 == 0 ? 'Çift sayıdır' : 'Tek sayıdır');
     console.log(sonuc);
 }
-
 ///////////////////////////////////////////////////////////////////////////////
 
 // function buyukSayi(){

@@ -29,15 +29,19 @@
 
 ////////////////////////////////////////////////////////////////////////////
 
+
 function notGiris(){
+    // func tion notGirisi(puan = ''){ EĞER İNPUT GİRİLMEZSE NULL ATANSIN.}
 
     let puan= +prompt('0-100 arasında bir puan giriniz: ');
-
+    
     while(puan <0){ 
         alert('Uygun aralıkta puan giriniz.');
         puan= +prompt('0-100 arasında bir puan giriniz: ');}
-
-    while(puan>100){ 
-        alert('Uygun aralıkta puan giriniz.');
-        puan= +prompt('0-100 arasında bir puan giriniz: ');}
-}
+        
+        while(puan>100){ 
+            alert('Uygun aralıkta puan giriniz.');
+            puan= +prompt('0-100 arasında bir puan giriniz: ');}
+        }
+        
+        ////////////////////////////////////////////////////////////////////////////

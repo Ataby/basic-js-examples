@@ -48,3 +48,4 @@ function fibonacci(n){
 
 const n = +prompt('Dizi uzunluğu: ');
 console.log(`Fibonacci(${n}) = ${fibonacci(n)}`);
+// RECURSIVE FUNC, KENDİNİ ÇAĞIRAN FONKSİYONDUR. ÖRN: FIBONACCI

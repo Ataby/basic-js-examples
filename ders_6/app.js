@@ -34,3 +34,17 @@ console.log(tekCift(269));
 
 const hacim = (r,h) =>Math.PI * r * r * h;
 console.log(`Silindirin hacmi: ${hacim(5,4)}`);
+
+function fibonacci(n){
+    let array=[n];
+    array[0]=1;
+    array[1]=1;
+
+    for(let i=2; i<=n; i++ ){
+        array[i]=array[i-1] + array[i-2];
+    }
+    return array[n-1];
+}
+
+const n = +prompt('Dizi uzunluğu: ');
+console.log(`Fibonacci(${n}) = ${fibonacci(n)}`);

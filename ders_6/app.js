@@ -16,7 +16,7 @@
     
 //     return something; or not return statement
     
-// }
+// };
 
 // FUNCTION DECLERATION TYPES AS ABOVE
 

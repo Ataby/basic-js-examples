@@ -79,9 +79,9 @@
 ////////////////////////////////////////////////////////////////////////////////////
 
 // let arabalar = new Array("BMW", "Audi", "Chrysler", "Mini","Mercedes E200");
-// let garaj1= arabalar.slice(0,2); //START DAHİL; END DAHİL DEĞİL.
-// let garaj2= arabalar.splice(2,1,'Toyota');
-// let garaj3= arabalar.slice(2);
+// let garaj1= arabalar.slice(0,2); //LİSTEYİ BÖL. START DAHİL; END DAHİL DEĞİL.
+// let garaj2= arabalar.splice(2,1,'Toyota'); // 2. İNDİSİ SİL, YERİNE BUNU YAZ.
+// let garaj3= arabalar.slice(2); //2. İNDİSTEN İTİBAREN LİSTEYİ BÖL
 
 // console.log(garaj1);
 // console.log(garaj3);

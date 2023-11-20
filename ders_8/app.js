@@ -57,7 +57,7 @@
 //  console.log(age);
  
 //  const doldur = new Array(2,3,4,5,6,7,8);
-//  doldur.fill(7,4,5); // BELİRLİ İNDİSLER ARASINU ŞUNUNLA DOLDUR.
+//  doldur.fill(7,4,5); // ŞUNUNLA BELİRLİ İNDİSLER ARASINI  DOLDUR.
 //  console.log(doldur);
  
  ////////////////////////////////////////////////////////////////////////////////////
@@ -72,7 +72,7 @@
 // console.log('Birleşmiş hali: ' ,birlesmis);
 // console.log('Önceki hali: ',sayilar);
 
-// const stringYapma = sayilar.toString();
+// const stringYapma = sayilar.toString(); //DİZİYİ BİRLEŞTİR, STRİNG'E DÖNÜŞTÜR
 // console.log(stringYapma);
 
 
@@ -92,7 +92,7 @@
 
 let age=[12,14,15,23,25,27,31,32];
 let check = age.every((yas)=> yas>=18); //TÜM ELEMANLARI BELİRLENEN KRİTERLE SORGULAR.
-let check2 = age.some((yas)=> yas>30); //KRİTERE UYAN 1 KİŞİ VARSA TRUE YAZAR.
+let check2 = age.some((yas)=> yas>30); //KRİTERE UYAN 1 ELEMAN VARSA TRUE YAZAR.
 
 // check // TRUE VEYA FALSE DÖNDÜRÜR.
 // ? console.log('Herkes 18 yaşından büyüktür')
@@ -102,8 +102,8 @@ let check2 = age.some((yas)=> yas>30); //KRİTERE UYAN 1 KİŞİ VARSA TRUE YAZA
 // ? console.log('Grupta Y kuşağı bireyler vardır')
 // : console.log('Grupta herkes Z kuşağıdır.');
 
-let cocuk = age.find((x)=>x<18); // KOŞULU SAĞLAYAN İLK ELEMENT
-let cocukSira = age.findIndex((x)=>x<18); //KOŞULU SAĞLAYAN İLK ELEMENT İNDİSİ
+let cocuk = age.find((x)=>x<18); // KOŞULU SAĞLAYAN İLK ELEMENTİ BUL
+let cocukSira = age.findIndex((x)=>x<18); //KOŞULU SAĞLAYAN İLK ELEMENT İNDİSİNİ BUL
 let sonCocuk = age.findLast((x)=>x<18);
 let sonCocukSira = age.findLastIndex((x)=>x<18);
 

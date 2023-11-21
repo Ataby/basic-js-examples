@@ -58,23 +58,23 @@
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-let maaslar = [5500,8800,9000,6700,10000,6500,7250];
-//7300 DEN YUKARI OLANLARA %12 ZAM, DİĞERLERİNE %16 ZAM
+// let maaslar = [5500,8800,9000,6700,10000,6500,7250];
+// //7300 DEN YUKARI OLANLARA %12 ZAM, DİĞERLERİNE %16 ZAM
 
-let maasDusuk = maaslar
-.filter((k)=>k<7300)
-.sort((a,b)=>a-b)
-.map((x)=>Math.trunc(x*1.16));
+// let maasDusuk = maaslar
+// .filter((k)=>k<7300)
+// .sort((a,b)=>a-b)
+// .map((x)=>Math.trunc(x*1.16));
 
-let maasYuksek = maaslar
-.filter((k)=>k>7300)
-.sort((a,b)=>a-b)
-.map((k)=> Math.trunc(k*1.12));
+// let maasYuksek = maaslar
+// .filter((k)=>k>7300)
+// .sort((a,b)=>a-b)
+// .map((k)=> Math.trunc(k*1.12));
 
-let yeniMaaslar = maasDusuk.concat(maasYuksek);
+// let yeniMaaslar = maasDusuk.concat(maasYuksek);
 
-console.log(maaslar.sort((a,b)=>a-b));
-console.log(yeniMaaslar);
+// console.log(maaslar.sort((a,b)=>a-b));
+// console.log(yeniMaaslar);
 
 //////////////////////////////////////////////////////////////////////////////////////
 
@@ -92,3 +92,5 @@ let toplamZam = maaslar
 .map((x)=>x*=0.1)
 .reduce((acc,x)=> acc+x,0);
 console.log('toplam zam miktarı: ',toplamZam)
+
+//////////////////////////////////////////////////////////////////////////////////////

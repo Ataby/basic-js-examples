@@ -104,15 +104,17 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 let veysel = '    uzun ince bir yoldayim, gidiyorum gunduz gece';
-veysel = veysel.trimStart();
+veysel = veysel.trimStart(); //BAŞINDAKİ BOŞLUĞU SİLER.
+let bolunmus= veysel.slice(22,41); //22-41 ARASINI AL
+let kelime = veysel.split(' '); // BOŞLUĞA GÖRE KELİMELERİ AYIRIP ARRAY YAPAR.
+let harf= veysel.split(""); //HARF HARF AYIRIR.
+let iHarfi = veysel.split('i'); //İ HARFİNE GÖRE AYIRDIM.
 console.log(veysel);
-let bolunmus= veysel.slice(22,41);
-let kelime = veysel.split(' ');
-let harf= veysel.split("");
 console.log(bolunmus);
-console.log(kelime); // boşluğa göre ayırıp array'e çevirdi.
+console.log(kelime); 
 console.log(kelime.length);
 console.log(harf);
+console.log(iHarfi);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

@@ -78,3 +78,17 @@ console.log(yeniMaaslar);
 
 //////////////////////////////////////////////////////////////////////////////////////
 
+let maaslar = [5500,8800,9000,6700,10000,6500,7250];
+
+let sum=0;
+let toplam =maaslar.reduce((acc,val)=> acc+val ,0); 
+//TOPLAMA İÇİN ACC BAŞLANGIÇ DEĞERİ SIFIR VERİLİR. ÇARPMA İŞLEMİ İÇİN 1 VERİLİR.
+maaslar.forEach((maas) => (sum+=maas));
+console.log('toplam maaşlar: ',sum);
+console.log('toplam maaşlar: ',toplam);
+
+let toplamZam = maaslar
+.filter((x)=>x<7300)
+.map((x)=>x*=0.1)
+.reduce((acc,x)=> acc+x,0);
+console.log('toplam zam miktarı: ',toplamZam)

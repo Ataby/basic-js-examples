@@ -125,6 +125,7 @@ console.log(Object.keys(family), typeof Object.keys(family));
 
 Object.keys(family).forEach((p)=>console.log(p, typeof p));
 Object.values(family).forEach((p)=> console.log(p.name));
+
 Object.values(family).forEach((p)=> 
 p.job == 'developer' && console.log(p.dob)
 );

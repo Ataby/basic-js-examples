@@ -78,7 +78,7 @@ const family = { //NESTED OBJECT YAPISI AZ KULLANILIR
     person2:{
         name:'nursima',
         surname:'atabay',
-        job :'dentist',
+        job :'developer',
         gender:'kadın',
         drivingLic: true,
         dob: 'Nisan 2000'
@@ -129,7 +129,11 @@ Object.values(family).forEach((p)=> console.log(p.name));
 Object.values(family).forEach((p)=> 
 p.job == 'developer' && console.log(p.dob)
 );
-//FOR.EACh SADECE DİZİ İLE ÇALIŞIR
+//FOR.EACH SADECE DİZİ İLE ÇALIŞIR
+
+Object.values(family)
+.filter((x)=>x.job=='developer')
+.forEach((x)=>console.log(x.gender));
 
 // console.log(Object.values(family));//SADECE İÇERİDEKİ VALUE'LARI DÖNDÜRÜR
 // console.log(Object.entries(family));//VALUE+KEY DÖNDÜRÜR.

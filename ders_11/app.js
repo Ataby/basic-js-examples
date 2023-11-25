@@ -21,6 +21,7 @@
 //     this.model=model;
 //     this.engine = motor;
 //     this.expertise = ['tumKapılar' , 'kaput', 'tavan', 'bagaj'];
+        //FONKSİYON ILE OBJECT OLUŞTURURKEN this METODU KULLANILIR.
 // }
 
 // const arabam = new Araba('OTOMOBIL','MERCEDES E200','2018','1.6','OnKapılar','kaput','tavan','bagaj');
@@ -33,7 +34,7 @@
 
 // const yeniAraba = arabam; // Object=>.create() .assign() .spread() slice() .concat()
 // //SIĞ KOPYALAMA = İKİ AYRI DEĞİŞKEN, HEAP'TEKİ AYNI VERİ GRUBUNU İŞARET EDER
-// //JS'DE ÇOĞU METHOD SIĞ COPY YAPAR. DEEP COPY İÇİN STRİNGİFY VE PARSE KULLANILMALIDIR.
+// //JS'DE ÇOĞU METHOD SIĞ COPY YAPAR. DEEP COPY İÇİN PARSE VE STRİNGİFY KULLANILMALIDIR.
 // yeniAraba.marka ='BMW';
 // console.log(araba);
 
@@ -78,7 +79,7 @@ const family = { //NESTED OBJECT YAPISI AZ KULLANILIR
     person2:{
         name:'nursima',
         surname:'atabay',
-        job :'developer',
+        job :'öğrenci',
         gender:'kadın',
         drivingLic: true,
         dob: 'Nisan 2000'
@@ -87,7 +88,7 @@ const family = { //NESTED OBJECT YAPISI AZ KULLANILIR
     person3:{
         name:'ahmet',
         surname:'atabay',
-        job:'öğrenci',
+        job:'developer',
         gender:'erkek',
         drivingLic: false,
         dob: 'unknown 2026'
@@ -101,12 +102,15 @@ const family = { //NESTED OBJECT YAPISI AZ KULLANILIR
 //     console.log(family[person]);//kişi1'in özellikleri, kişi2'nin özellikleri...
 // }
 
-//OBJECT'LERİN KEY VE VALUE'LARINI OKUMAK İÇİN BUİLT-IN METOTLAR VARDIR. BU METODLAR, OBJECT VALUE'LARINI ARRAY OLARAK ÇEVİRİR.
+//OBJECT'LERİN KEY VE VALUE'LARINI OKUMAK İÇİN BUİLT-IN METOTLAR VARDIR. BU METODLAR, OBJECT VALUE'LARINI ARRAY OLARAK ÇEVİRİR. NESTED OBJECT'LERDE KULLANILIR.
 
  for (let kisi of Object.keys(family)){ 
     //OBJECT İTERABLE OLMADIĞI ALT OBJECT'LER BU ŞEKİLDE YAZILIR.
     console.log(kisi);//
  }
+
+//  for (let kisi in family){console.log(kisi)} // USTTEKI FOR'UN AYNI ÇIKTISI ILE AYNI
+
  console.log('************************************');
 
  for( let kisi of Object.values(family)){ 
@@ -115,7 +119,7 @@ const family = { //NESTED OBJECT YAPISI AZ KULLANILIR
  }
 
  for (let [key,value] of Object.entries(family)){
-    //ANA OBJECT'TEN HER ŞEYE İSTENİLEN HER DEĞERE ERİŞİM
+    //ANA OBJECT'TEN HER KEYS'E, İSTENİLEN HER VALUE'YA ERİŞİM
     console.log(`Kişi: ${value.name} ${value.surname} || DrivingLicense: ${value.drivingLic}`);
  }
 

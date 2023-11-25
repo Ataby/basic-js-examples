@@ -11,6 +11,7 @@
 //         // Math.random()= 0-1 arasında random sayı;
 
 //         // JS, INTERPRETER BİR DİLDİR.
+            //Compiler bir programı bütün olarak alır ve çevirirken; Interpreter programı satır satır çevirir.Compiler’da, bir hata oluştuduğunda, çeviri işlemi durur ve hata giderildikten sonra bütün program yeniden çeviri işlemine tabii tutulur. Interpreter, bunun tam aksine olarak, eğer bir hata meydana geldiğinde, o anki çeviriyi engeller ve hata giderildiğine çeviriyi kaldığı yerden devam ettirir. Bu yüzden debug işlemi daha kolaydır.Compiler’da, Interpreter’e kıyasla hata bulma daha zordur.
         
 //     }
 // };

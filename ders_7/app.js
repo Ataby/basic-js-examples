@@ -53,41 +53,41 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // const str8='uzun bir string';
-// console.log(str8.charAt());
+// console.log(str8.charAt());// CHARAT() ,İLK İNDİSTEKİ ELEMANI YAZDIRIR.
 // console.log(str8.charAt(6));
 // console.log( str8.length);
 // console.log(str8.charAt(str8.length-1));
-//EN SON ELEMAN YAZDIRILDI.
-// CHARAT() ,İNDİSTEKİ ELEMANI YAZDIRIR.
+// //EN SON ELEMAN YAZDIRILDI.
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // const word = "1234 Imagine, takes you from point A to everywhere."
-// console.log(word.includes('from'));
-// console.log(word.toLowerCase().includes('takes'));
+// console.log(word.includes('from')); // TRUE DONDURUR
+// console.log(word.toLowerCase().includes('takes')); //TRUE DONDURUR
 // console.log(word.includes('Imagine' , 6)); //6.indisten sonra ara ? 
-// console.log(word.indexOf('you'));
+// console.log(word.indexOf('you')); //KACINCI INDISTE BASLIYOR ?
 // //ISTENEN KELİMEYİ STRİNG'DE BULMA
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // const buyukHarf = /[A-Za-z]/; //BU ARALIĞIN DIŞINDA KAÇ ELEMAN VAR?
-// const nokta = /[.]/; //BUNUN HARİCİNDE KAÇ ELEMAN VAR ?
-// const virgul = /[,]/;//BUNUN HARİCİNDE KAÇ ELEMAN VAR ?
+// const nokta = /[.]/; 
+// const virgul = /[,]/;
 // console.log(word.search(buyukHarf));
 // console.log(word.search(nokta));
 // console.log(word.search(virgul));
-// // REGEX SUMMARY 
+// REGEX SUMMARY 
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // let word2 = 'sen gülünce güller açar gül pembe';
-// console.log(word2.startsWith('gülünce'));
+// console.log(word2.startsWith('gülünce')); //FALSE
 // console.log(word2.startsWith('gülünce',4)); //4.karakter bununla mı başlıyor?
-// console.log(word2.endsWith('mbe'));
+// console.log(word2.endsWith('mbe'));//TRUE
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -95,7 +95,7 @@
 // let word3 = 'Hizli yürümek yürümek için spor kamyon kamyon almalıyım';
 // word3= word3.replace('yürümek','gitmek'); //replace sadece ilk bulduğunu değiştiriyor.
 // word3= word3.replace(/kamyon/gi,'araba');// regex 'gi' hepsini değiştiriyor.
-// //word3= word3.replaceAll('kamyon','araba');
+// // word3= word3.replaceAll('kamyon','araba'); //ÜST SATIRLA AYNI ISLEM
 // console.log(word3);
 
 // word3 = word3.replace(/HIZLI/i, 'Daha hızlı'); // /HIZLI/i büyük harf insensitive;
@@ -103,18 +103,20 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-let veysel = '    uzun ince bir yoldayim, gidiyorum gunduz gece';
-veysel = veysel.trimStart(); //BAŞINDAKİ BOŞLUĞU SİLER.
-let bolunmus= veysel.slice(22,41); //22-41 ARASINI AL
-let kelime = veysel.split(' '); // BOŞLUĞA GÖRE KELİMELERİ AYIRIP ARRAY YAPAR.
-let harf= veysel.split(""); //HARF HARF AYIRIR.
-let iHarfi = veysel.split('i'); //İ HARFİNE GÖRE AYIRDIM.
-console.log(veysel);
-console.log(bolunmus);
-console.log(kelime); 
-console.log(kelime.length);
-console.log(harf);
-console.log(iHarfi);
+// let veysel = '    uzun ince bir yoldayim, gidiyorum gunduz gece';
+// veysel = veysel.trimStart(); //BAŞINDAKİ BOŞLUĞU SİLER.
+// let bolunmus= veysel.slice(22,39); // INDIS 22-39 ARASINI AL
+// let kelime = veysel.split(' '); // BOŞLUĞA GÖRE KELİMELERİ AYIRIP ARRAY YAPAR.
+// let harf= veysel.split(""); //HARF HARF AYIRIR.
+// let harf2 = [...veysel]; //HARF HARF AYIRIR => SPREAD(...)
+// let iHarfi = veysel.split('i'); //İ HARFİNE GÖRE AYIRDIM.
+// console.log(veysel);
+// console.log(bolunmus);
+// console.log(kelime); 
+// console.log(kelime.length);
+// console.log(harf);
+// console.log(harf2);
+// console.log(iHarfi);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

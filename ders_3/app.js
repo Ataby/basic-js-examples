@@ -51,7 +51,7 @@ while (counter!=0){
      array[counter] = +prompt(`sayı giriniz`);
     counter-=1;
 }
-
+// KULLANICIDAN 3 SAYI ALIP EN AZ IKISININ BIRLER BASAMAĞI AYNI MI DIYE KONTROL ETMEK
 counter=3;
 
 if ((array[counter] % 10) == (array[counter-1]%10)){ 

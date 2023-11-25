@@ -4,30 +4,33 @@
 // const pos =[];
 
 // const ayirma = (n) => {
-//     // for ( let i =0; i<dizi.length; i++){
-//     //     if( n[i]<0){
-//     //         neg.push(n[i]);
-//     //     }else if (n[i]>0){
-//     //         pos.push(n[i]);
-//     //     }
-
-//     // }
-
-//     for (let i in dizi){
-//         if(dizi[i]<0){
-//             neg.push(dizi[i]);
-//         } else if (dizi[i]>=0) {
-//             pos.push(dizi[i]);
+//     for ( let i =0; i<dizi.length; i++){
+//         if( n[i]<0){
+//             neg.push(n[i]);
+//         }else if (n[i]>0){
+//             pos.push(n[i]);
 //         }
 //     }
-
+//     console.log(pos);
+//     console.log(neg);   
 // }
 // ayirma(dizi);
-// console.log(pos);
-// console.log(neg);
+
+//     // for (let i in dizi){
+//     //     if(dizi[i]<0){
+//     //         neg.push(dizi[i]);
+//     //     } else if (dizi[i]>=0) {
+//     //         pos.push(dizi[i]);
+//     //     }
+//     // }
+
+// // console.log(pos);
+// // console.log(neg);
+
+
 ////////////////////////////////////////////////////////////////////////////
 
-// const isimler = new Array('Ahmet','Safa','Kemal','Ayhan','Melike','Nursima')
+// const isimler = new Array('Ahmet','Safa','Kemal','Ayhan','Merve','Nursima')
 // const soyIsimler = new Array('Kaya','Çomaklı','Taş','Parlak','Yılmaz','Atabay');
 
 // const birlestir = (a,b) => {
@@ -43,55 +46,37 @@
 // console.log(birlestir(isimler,soyIsimler));
 //////////////////////////////////////////////////////////////////////////////////
 
-let ogrenciler = ['ahmet','ahmet','ahmet','mehmet','fatih','samet','fatih','samet','mehmet'];
-let sayac=0;
+// let ogrenciler = ['ahmet','ahmet','ahmet','mehmet','fatih','samet','fatih','samet','mehmet'];
+// let sayac=0;
 
-let ogrenciBul =(dizi,aranan)=> { 
-    
-    for (let isim of dizi){
-        //isim == aranan ? sayac+=1 : null;
-        isim == aranan && sayac += 1;   // KOŞUL DOĞRU İSE ÇALIŞIR.   
-        //isim == aranan || sayac += 1;   // KOŞUL YANLIŞ İSE ÇALIŞIR.   
-    }
-    
-    return !sayac 
-    ? console.log(`${aranan} isimde öğrenci bulunamamıştır.`)
-    : console.log(`${aranan} isminde ${sayac} tane öğrenci bulunmuştur`);
-
-}
 // let ogrenciBul =(dizi,aranan)=> { 
     
-//     for (let i in dizi){
-//         if(dizi[i] == aranan ){sayac+=1;}
-        
+//     for (let i in dizi){ 
+//         //FOR_IN'DE, INDIS SAYISAL OLARAK KULLANILIR. ÖRN:0-1-2-3 
+            //FOR_OF'DA INDISIN BARINDIRDIĞI DEĞER KULLANILIR ÖRN:OBJECT
+//         if(dizi[i] === aranan ){sayac+=1;}        
 //     }
     
 //     if(!sayac) {console.log(`${aranan} isimde öğrenci bulunamamıştır.`);} 
 //     else {console.log(`${aranan} isminde ${sayac} tane öğrenci bulunmuştur`);} 
+    
+//     //     return !sayac 
+//     //     ? console.log(`${aranan} isimde öğrenci bulunamamıştır.`)
+//     //     : console.log(`${aranan} isminde ${sayac} tane öğrenci bulunmuştur`);
 
 // }
-// for ( let i in x){    
-    //    for (let k in x){
-//         if(x[i]==x[k]){
-//             sayac+=1;
-//         }
-
-//    }
-//    //console.log(`${x[i]} isminden ${sayac} tane vardır.`)
-//    sayac = 0;
-// } return 0;
-ogrenciBul(ogrenciler,'taha');
+// ogrenciBul(ogrenciler,'taha');
 
 //////////////////////////////////////////////////////////////////////////////////
 
-let kelimeler =['20Kasımdan','itibaren','erken','kalkmaya','niyet','ettim.'];
+// let kelimeler =['20Kasımdan','itibaren','erken','kalkmaya','niyet','ettim.'];
 
-let cumle = [];
+// let cumle = [];
 
-    for (let kelime of kelimeler){
-        cumle += kelime + ' ';
-    }
+//     for (let kelime of kelimeler){
+//         cumle += kelime + ' ';
+//     }
 
-    console.log(cumle);
+//     console.log(cumle);
 
 

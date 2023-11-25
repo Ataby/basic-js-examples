@@ -1,6 +1,7 @@
 // JSON => JAVASCRİPT OBJECT NOTATION
 
-const team =[{name:'jason', surname:'adams',job:'developer',age:'30'}, 
+const team =[
+    {name:'jason', surname:'adams',job:'developer',age:'30'}, 
     {name:'mary', surname:'cure',job:'chemist',age:'28'},
     {name:'san ', surname:'croise',job:'pilot',age:'38'}]
 

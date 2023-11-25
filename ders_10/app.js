@@ -7,20 +7,23 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 // let arabalar = ['Toyota', 'Honda', 'VW Golf', 'VW Polo']
-// let fiyatlar = [ 12,24,34,45,75,87,34,456];
-
 // arabalar.forEach((k)=> console.log(k)); //FOR_EACH'İN RETURN'U YOKTUR. 
+
+// let fiyatlar = [ 12,24,34,45,75,87,34,456];
+// console.log('Zamsız fiyatlar: ',fiyatlar,'= ',fiyatlar.reduce((acc,x)=>(acc+=x),0));
 
 // let toplam = 0;
 // fiyatlar.forEach((price,index,arr)=>{ 
 //     arr[index]=Math.round(price*1.1).toFixed(2);
 //     toplam+=price;
-//     console.log(`Yeni zamlı fiyalar: ${arr}`);
-// })
+//     return arr;
+// });
+// console.log(`Yeni zamlı fiyalar:`,fiyatlar,' ');
 
 // fiyatlar.forEach((fiyat,index) => {
-//     toplam=toplam+fiyat;
-//     console.log(`${index}.toplamda sonuç: ${toplam}`);
+//     toplam=toplam+ (+fiyat);
+//     // return toplam;
+//     console.log(`${index}.toplamda sonuç: ${toplam}`)
 // })
 
 //////////////////////////////////////////////////////////////////////////////////////
@@ -43,7 +46,7 @@
 //////////////////////////////////////////////////////////////////////////////////////
 
 // let fiyatTL =[100,150,100,50,80,70];
-// let fiyatDolar = fiyatTL.map((k)=>+(k/28.6).toFixed(2));//STRING SONUCU NUMBER YAPILDI
+// let fiyatDolar = fiyatTL.map((k)=>+(k/28.6).toFixed(2));//ARTI İŞARETİ İLE STRING SONUCU NUMBER YAPILDI
 // let fiyatEuro = fiyatTL.map((i)=>+(i/30.6).toPrecision(2)); // ÜST SATIRIN AYNISI
 // let ucuzDolar = fiyatDolar.filter((x)=>x<=3);
 // let ucuzEuro = fiyatEuro.filter((i)=>i<=3);
@@ -78,19 +81,19 @@
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-let maaslar = [5500,8800,9000,6700,10000,6500,7250];
+// let maaslar = [5500,8800,9000,6700,10000,6500,7250];
 
-let sum=0;
-let toplam =maaslar.reduce((acc,val)=> acc+val ,0); 
-//TOPLAMA İÇİN ACC BAŞLANGIÇ DEĞERİ SIFIR VERİLİR. ÇARPMA İŞLEMİ İÇİN 1 VERİLİR.
-maaslar.forEach((maas) => (sum+=maas));
-console.log('toplam maaşlar: ',sum);
-console.log('toplam maaşlar: ',toplam);
+// let toplam =maaslar.reduce((acc,val)=> acc+val ,0); 
+// //TOPLAMA İÇİN ACC BAŞLANGIÇ DEĞERİ SIFIR VERİLİR. ÇARPMA İŞLEMİ İÇİN 1 VERİLİR.
+// 
+// let sum=maaslar.forEach((maas) => (sum+=maas));
+// console.log('toplam maaşlar: ',sum);
+// console.log('toplam maaşlar: ',toplam);
 
-let toplamZam = maaslar
-.filter((x)=>x<7300)
-.map((x)=>x*=0.1)
-.reduce((acc,x)=> acc+x,0);
-console.log('toplam zam miktarı: ',toplamZam)
+// let toplamZam = maaslar
+// .filter((x)=>x<7300)
+// .map((x)=>x*=0.1)
+// .reduce((acc,x)=> acc+x,0);
+// console.log('toplam zam miktarı: ',toplamZam)
 
 //////////////////////////////////////////////////////////////////////////////////////

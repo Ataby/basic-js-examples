@@ -80,15 +80,18 @@
 //BIRBIRINE BAGLI ASYNC YAPILARIN KODLAMASI NESTED ILE YAPILIR FAKAT TAVSIYE EDILMEZ. 
 //CALLBACK HELL(nested ve bırbırıne baglı callback'ler)
 
-setTimeout(()=>{
-      console.log('+: Hi');
-      setTimeout(()=>{
-            console.log('-: Hello');
-            setTimeout(()=>{
-                  console.log('+: How are you ?');
-                  setTimeout(()=>{
-                        console.log('-: Fine and you ?')
-                  },1000)
-            },1000)
-      },1000)
-},1000)
+// setTimeout(()=>{
+//       console.log('+: Hi');
+//       setTimeout(()=>{
+//             console.log('-: Hello');
+//             setTimeout(()=>{
+//                   console.log('+: How are you ?');
+//                   setTimeout(()=>{
+//                         console.log('-: Fine and you ?')
+//                   },1000)
+//             },1000)
+//       },1000)
+// },1000)
+
+
+///////////////////////////////////////////////////////////////////////////////////////

@@ -1,0 +1,2 @@
+Today is sunday.
+The weather is cloudy and cold.

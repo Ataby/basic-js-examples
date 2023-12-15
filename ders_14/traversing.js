@@ -21,3 +21,12 @@ css.previousElementSibling.style.background="turquoise";
 css.nextElementSibling.style.background="yellow";
 css.nextElementSibling.style.fontSize="25px";
 ul.lastElementChild.style.background="red";
+
+//////////////////////////////////////////////////////////////////////
+
+const newPar = document.createElement("p");
+const liElement = document.createElement("li");
+const aciklama = document.createTextNode("These topics will be learned in the program");
+newPar.appendChild(aciklama);
+const h2 = document.querySelector(".item-list h2");
+h2.after(newPar); //H2 DEN SONRA BU ELEMENTI EKLE

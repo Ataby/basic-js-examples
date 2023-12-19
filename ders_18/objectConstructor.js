@@ -1,4 +1,4 @@
-function book(title,author,year){
+ function book(title,author,year){
     this.baslik = title;
     this.yazar=author;
     this.yil=year;

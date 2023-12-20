@@ -16,7 +16,7 @@ class kitap {
         return new Date().getFullYear() - this.yil;
     }
     getSummary (){
-        return  `${this.baslik} was written by ${this.yazar} in ${this.yil}.`;
+        return  `${this.baslik} was written by ${this.yazar} in ${this.yil}. `;
     }
     setPrice(price){
         const taxRate = 1.08;
